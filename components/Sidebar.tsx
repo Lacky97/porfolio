@@ -40,7 +40,7 @@ const Sidebar = () => {
         <a href="" aria-label="Linkedin">
           <AiFillLinkedin className="socialMediaIcons" />
         </a>
-        <a href="" aria-label='Instagram'>
+        <a href="https://www.instagram.com/lacky97/" aria-label='Instagram'>
           <AiFillInstagram className="socialMediaIcons" />
         </a>
       </div>
