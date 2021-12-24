@@ -10,7 +10,7 @@ function Projects() {
   const [projectsState, setProjectsState] = useState(projectsSite);
   const [active, setActive] = useState("All");
 
-  const [showDetail, setShowDetail] = useState<number|null>(null);
+  const [showDetail, setShowDetail] = useState<number | null>(null);
 
   const handleFilterCategory = (category: Category | "All") => {
     if (category === "All") {
@@ -46,13 +46,16 @@ function Projects() {
           />
         </motion.div>
 
-        <div className="px-5 py-2 overflow-y-scroll" style={{ height: "65vh" }}>
-          <div className="relative grid grid-cols-12 gap-4 my-3 ">
+        <div className="px-5 overflow-y-scroll" style={{height: '33rem'}}>
+          <div className="relative grid grid-cols-12 gap-4 ">
             {projectsState.map((project) => (
               <motion.div
                 key={project.name}
-                className="col-span-12 p-2 bg-gray-200 rounded-xl sm:col-span-6 lg:col-span-4 dark:bg-dark-200"
+                className="col-span-12 p-2 bg-gray-200 cursor-pointer rounded-xl sm:col-span-6 lg:col-span-4 dark:bg-dark-200"
                 variants={fadeUp}
+                onClick={() => {
+                  if(project.id !== showDetail) setShowDetail(project.id);
+                }}
               >
                 <ProjectCard
                   project={project}

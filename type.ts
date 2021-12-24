@@ -16,11 +16,13 @@ export interface IProject{
     id: number;
     name: string;
     description: string;
-    image_path: string;
+    image_path: StaticImageData;
     deployed_url: string;
     github_url: string;
+    playStore_url: string;
+    appStore_url:string;
     category: Category[];
     key_tech: string[];
 }
 
-export type Category = 'react' | 'flutter' | 'flask'
+export type Category = 'react' | 'flutter' | 'python'

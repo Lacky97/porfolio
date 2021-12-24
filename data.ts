@@ -1,35 +1,48 @@
 import { RiComputerLine} from 'react-icons/ri';
 import { IProject, IServices, ISkill } from './type';
-import {BsCircleFill} from 'react-icons/bs';
+import { DiPython, DiJavascript1, DiDart, DiReact, DiMongodb} from 'react-icons/di';
+import { RiFlutterFill } from 'react-icons/ri';
+import { SiFlask, SiBlender, SiFirebase, SiTelegram } from 'react-icons/si';
+import { MdAnimation } from 'react-icons/md';
+import { AiOutlineApi, AiFillDatabase } from 'react-icons/ai';
+import { FaMobileAlt, FaHackerrank } from 'react-icons/fa';
+import menus from '/public/images/menus.png';
+import pog from '/public/images/pogchamps.png';
+import liguria from '/public/images/liguria.png'
+import speech from '/public/images/speech.png';
+import esportazione from '/public/images/export.png';
+import OSBot from '/public/images/oneshotBot.png';
+import fiumiBot from '/public/images/fiumiBot.png';
+import eterDog from '/public/images/eterDog.png';
+
 
 export const services:IServices[] = [
     {
-        title: 'Frontend Developer',
-        about: 'lorem Ipsum is Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum',
+        title: 'Frontend Development',
+        about: 'I can build a beautiful and scalable interface using HTML,CSS and React.js',
         Icon: RiComputerLine,
     },
     {
-        title: '123',
-        about: 'lorem Ipsum is Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum',
-        Icon: RiComputerLine,
+        title: 'Backend Development',
+        about: 'handle database, server, api using Express & other popular frameworks',
+        Icon: AiFillDatabase,
     },{
-        title: 'Frontend Developer',
-        about: 'lorem Ipsum is Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum',
-        Icon: RiComputerLine,
+        title: 'Api Development',
+        about: 'I can develop robust REST API using Flask',
+        Icon: AiOutlineApi,
     },
     {
-        title: '123',
+        title: 'Mobile Development',
         about: 'lorem Ipsum is Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum',
-        Icon: RiComputerLine,
+        Icon: FaMobileAlt,
     },{
-        title: 'Frontend Developer',
+        title: 'Competitive Challenge',
+        about: 'a daily problem solver in HackerRank',
+        Icon: FaHackerrank,
+    },{
+        title: 'Python Bot and Script',
         about: 'lorem Ipsum is Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum',
-        Icon: RiComputerLine,
-    },
-    {
-        title: '123',
-        about: 'lorem Ipsum is Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum',
-        Icon: RiComputerLine,
+        Icon: DiPython,
     }
 ]
 
@@ -37,178 +50,183 @@ export const languages:ISkill[] = [
     {
         name:'Python',
         level:'70%',
-        Icon: BsCircleFill,
+        Icon: DiPython,
     },
     {
-        name:'Python',
+        name:'JavaScript',
         level:'70%',
-        Icon: BsCircleFill,
+        Icon: DiJavascript1,
     },
     {
-        name:'Python',
+        name:'Dart',
         level:'70%',
-        Icon: BsCircleFill,
+        Icon: DiDart,
     },
     {
-        name:'Python',
+        name:'React',
         level:'70%',
-        Icon: BsCircleFill,
+        Icon: DiReact,
     },
     {
-        name:'Python',
+        name:'Flask',
         level:'70%',
-        Icon: BsCircleFill,
-    },
-    {
-        name:'Python',
-        level:'70%',
-        Icon: BsCircleFill,
-    },
-    {
-        name:'Python',
-        level:'70%',
-        Icon: BsCircleFill,
+        Icon: SiFlask,
     },
     {
         name:'Flutter',
-        level:'60%',
-        Icon: BsCircleFill,
+        level:'40%',
+        Icon: RiFlutterFill,
     },
 ]
 
 
 export const tools:ISkill[] = [
     {
-        name:'Python',
+        name:'Rive',
         level:'70%',
-        Icon: BsCircleFill,
+        Icon: MdAnimation,
     },
     {
-        name:'Python',
+        name:'Blender',
         level:'70%',
-        Icon: BsCircleFill,
+        Icon: SiBlender,
     },
     {
-        name:'Python',
+        name:'Studio 3T',
         level:'70%',
-        Icon: BsCircleFill,
+        Icon: DiMongodb,
     },
     {
-        name:'Python',
+        name:'Firebase',
         level:'70%',
-        Icon: BsCircleFill,
+        Icon: SiFirebase,
     },
     {
-        name:'Python',
+        name:'Telegram bot',
         level:'70%',
-        Icon: BsCircleFill,
-    },
-    {
-        name:'Python',
-        level:'70%',
-        Icon: BsCircleFill,
-    },
-    {
-        name:'Python',
-        level:'70%',
-        Icon: BsCircleFill,
-    },
-    {
-        name:'Flutter',
-        level:'40%',
-        Icon: BsCircleFill,
+        Icon: SiTelegram,
     },
 ]
 
 export const projectsSite:IProject[] = [
     {
         id:1,
-        name:'COVID',
-        description:'this app allow to see homy many codiv cas in a day',
-        image_path: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg',
+        name:'Menus',
+        description:'Questa applicazione permette di memorizzare i menu dei ristoranti, scansionati tramite QR Code, per poi poterli consultare in qualsiasi momento si voglia',
+        image_path: menus,
         deployed_url: 'https://google.com/',
-        github_url: 'https://google.com/',
-        category: ['react'],
-        key_tech: ['React', 'Chart.js', 'Material UI']
+        github_url: 'https://github.com/Lacky97/menus',
+        playStore_url:'',
+        appStore_url:'',
+        category: ['flutter'],
+        key_tech: ['Flutter', 'Dart', 'Hive']
     },
     {
         id:2,
-        name:'COVID2',
-        description:'this app allow to see homy many codiv cas in a day',
-        image_path: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg',
-        deployed_url: 'https://google.com/',
+        name:'PogChampsIta',
+        description:'Questo sito permette di tenere traccia dei risultati delle partite di un torneo di schacchi tra streamer di twitch.',
+        image_path: pog,
+        deployed_url: 'https://pogchampsita.web.app/',
         github_url: 'https://google.com/',
+        playStore_url:'',
+        appStore_url:'',
         category: ['react'],
-        key_tech: ['React', 'Chart.js', 'Material UI']
+        key_tech: ['React', 'Material UI']
     },
     {
         id:3,
-        name:'COVID3',
-        description:'this app allow to see homy many codiv cas in a day',
-        image_path: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg',
+        name:'Livello Fiumi Liguria App',
+        description:'this app allow to see homy many codiv cas in a day, this app allow to see homy many codiv cas in a day, this app allow to see homy many codiv cas in a day, this app allow to see homy many codiv cas in a day, ',
+        image_path: liguria,
         deployed_url: 'https://google.com/',
         github_url: 'https://google.com/',
-        category: ['flask'],
-        key_tech: ['React', 'Chart.js', 'Material UI']
+        playStore_url:'',
+        appStore_url:'',
+        category: ['flutter'],
+        key_tech: ['Flutter', 'Dart', 'Flutter Charts']
     },
     {
         id:4,
-        name:'COVID4',
+        name:'Livello Fiumi Liguria Bot',
         description:'this app allow to see homy many codiv cas in a day',
-        image_path: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg',
+        image_path: fiumiBot,
         deployed_url: 'https://google.com/',
         github_url: 'https://google.com/',
-        category: ['react'],
-        key_tech: ['React', 'Chart.js', 'Material UI']
+        playStore_url:'',
+        appStore_url:'',
+        category: ['python'],
+        key_tech: ['Python', 'Telebot']
     },
     {
         id:5,
-        name:'COVID5',
+        name:'EternalDogs',
         description:'this app allow to see homy many codiv cas in a day',
-        image_path: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg',
+        image_path: eterDog,
         deployed_url: 'https://google.com/',
         github_url: 'https://google.com/',
+        playStore_url:'',
+        appStore_url:'',
         category: ['react'],
-        key_tech: ['React', 'Chart.js', 'Material UI']
+        key_tech: ['React', 'Framer-motion', 'Tailwind']
     },
     {
         id:6,
-        name:'COVID6',
+        name:'EternalDogs App',
         description:'this app allow to see homy many codiv cas in a day',
-        image_path: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg',
+        image_path: menus,
         deployed_url: 'https://google.com/',
         github_url: 'https://google.com/',
-        category: ['react'],
-        key_tech: ['React', 'Chart.js', 'Material UI']
+        playStore_url:'',
+        appStore_url:'',
+        category: ['flutter'],
+        key_tech: ['Flutter', 'Hive', 'Dart']
     },
     {
         id:7,
-        name:'COVID7',
+        name:'OneShot',
         description:'this app allow to see homy many codiv cas in a day',
-        image_path: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg',
+        image_path: menus,
         deployed_url: 'https://google.com/',
         github_url: 'https://google.com/',
-        category: ['react'],
-        key_tech: ['React', 'Chart.js', 'Material UI']
+        playStore_url:'',
+        appStore_url:'',
+        category: ['flutter'],
+        key_tech: ['Flutter', 'Rive', 'Hive', 'Dart']
     },
     {
         id:8,
-        name:'COVID8',
+        name:'RandomChoise (for OneShot)',
         description:'this app allow to see homy many codiv cas in a day',
-        image_path: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg',
+        image_path: OSBot,
         deployed_url: 'https://google.com/',
         github_url: 'https://google.com/',
-        category: ['react'],
-        key_tech: ['React', 'Chart.js', 'Material UI']
-    },    
+        playStore_url:'',
+        appStore_url:'',
+        category: ['python'],
+        key_tech: ['Python', 'Flask']
+    },
     {
         id:9,
-        name:'COVID9',
+        name:'speech project',
         description:'this app allow to see homy many codiv cas in a day',
-        image_path: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg',
+        image_path: speech,
         deployed_url: 'https://google.com/',
         github_url: 'https://google.com/',
-        category: ['react'],
-        key_tech: ['React', 'Chart.js', 'Material UI']
-    }
+        playStore_url:'',
+        appStore_url:'',
+        category: ['python'],
+        key_tech: ['Android', 'Speech Recognizer']
+    },
+    {
+        id:10,
+        name:'Esportazione Mosaico',
+        description:'this app allow to see homy many codiv cas in a day',
+        image_path: esportazione,
+        deployed_url: 'https://google.com/',
+        github_url: 'https://google.com/',
+        playStore_url:'',
+        appStore_url:'',
+        category: ['python'],
+        key_tech: ['Python', 'Flask']
+    },
 ]

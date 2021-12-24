@@ -16,11 +16,11 @@ export const NavItem:FunctionComponent<{value:Category | 'All', handleFilterCate
 
 const ProjectsNavbar: FunctionComponent<{handleFilterCategory:Function, active: string}> = (props) => {
     return (
-        <div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
+        <div className="flex px-6 py-2 space-x-3 overflow-x-auto list-none">
             <NavItem value='All' {...props}/>
             <NavItem value='react' {...props}/>
             <NavItem value='flutter' {...props}/>
-            <NavItem value='flask' {...props}/>
+            <NavItem value='python' {...props}/>
         </div>
     )
 }

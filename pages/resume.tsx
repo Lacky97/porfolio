@@ -7,27 +7,31 @@ import Head from "next/head";
 function Resume() {
   return (
     <motion.div
-      className="px-6 py-2"
+      className="px-6 "
       variants={routeAnimation}
       initial="anitial"
       animate="animate"
+      exit="exit"
     >
-
-<Head>
+      <Head>
         <title>Web Developer | portfolio | submit</title>
       </Head>
       {/* education and exp */}
-      <div className="grid gap-6 md:grid-cols-2">
-        <motion.div variants={fadeUp} initial="initial" animate="animate" exit="exit">
+      <div className="grid gap-6 md:grid-cols-2" >
+        <motion.div
+          variants={fadeUp}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+        >
           <h5 className="my-3 text-2xl font-bold">Education</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">
-              COmputer Science Engenieering
+              Bachelor of Computer Science
             </h5>
-            <p className="font-semibold">Acadmy of stocazzo</p>
+            <p className="font-semibold">Università degli Studi di Genova</p>
             <p className="my-3">
-              I am currently on stocazzo di sonno che mi ritrovo e sono le 3.20
-              e questa cazzo di insonnio non mi permette di dormire
+              Attualmente in cerca di un&apos;occupazione
             </p>
           </div>
         </motion.div>
@@ -35,11 +39,11 @@ function Resume() {
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">
-              Software Engenier di sta minchia
+              Junior Programme
             </h5>
-            <p className="font-semibold">preferirei non dirlo</p>
+            <p className="font-semibold">Compat</p>
             <p className="my-3">
-              non so nemmeno per quale motivo io abbia accettato
+              Controllo e aggiornamento di Mosaico, un software gestionale per gli agricoltori
             </p>
           </div>
         </motion.div>

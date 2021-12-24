@@ -21,7 +21,7 @@ function Navbar() {
       return activeItem !== name ? (
             <Link href={route}>
               <a>
-                <span className='hover:text-green' onClick={() => setActiveItem(name)}>{name}</span>
+                <span className='dark:fancy-link-dark fancy-link' onClick={() => setActiveItem(name)}>{name}</span>
               </a>
             </Link>
           ) : null;
@@ -29,7 +29,7 @@ function Navbar() {
   }
   
   return (
-    <div className='flex justify-between px-5 py-3 my-3'>
+    <div className='flex justify-between px-5 pt-3 pb-1 mt-3'>
       <span className="text-xl font-bold border-b-4 text-green border-green md:text-2xl">{activeItem}</span>
       <div className="flex space-x-5 font-lg">
         <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='About' route='/'/>
