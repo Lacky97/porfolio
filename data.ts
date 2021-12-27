@@ -1,8 +1,8 @@
 import { RiComputerLine} from 'react-icons/ri';
 import { IProject, IServices, ISkill } from './type';
-import { DiPython, DiJavascript1, DiDart, DiReact, DiMongodb} from 'react-icons/di';
+import { DiJavascript1, DiDart, DiReact, DiMongodb} from 'react-icons/di';
 import { RiFlutterFill } from 'react-icons/ri';
-import { SiFlask, SiBlender, SiFirebase, SiTelegram } from 'react-icons/si';
+import { SiFlask, SiBlender, SiFirebase, SiTelegram, SiPython } from 'react-icons/si';
 import { MdAnimation } from 'react-icons/md';
 import { AiOutlineApi, AiFillDatabase } from 'react-icons/ai';
 import { FaMobileAlt, FaHackerrank } from 'react-icons/fa';
@@ -16,6 +16,7 @@ import fiumiBot from '/public/images/fiumiBot.png';
 import eterDog from '/public/images/eterDog.png';
 
 
+
 export const services:IServices[] = [
     {
         title: 'Frontend Development',
@@ -24,7 +25,7 @@ export const services:IServices[] = [
     },
     {
         title: 'Backend Development',
-        about: 'handle database, server, api using Express & other popular frameworks',
+        about: 'Handle database, server, api using Express & other popular frameworks',
         Icon: AiFillDatabase,
     },{
         title: 'Api Development',
@@ -33,62 +34,58 @@ export const services:IServices[] = [
     },
     {
         title: 'Mobile Development',
-        about: 'lorem Ipsum is Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum',
+        about: 'I can develop mobile applications using Flutter or Java',
         Icon: FaMobileAlt,
     },{
         title: 'Competitive Challenge',
-        about: 'a daily problem solver in HackerRank',
+        about: 'A daily problem solver in HackerRank',
         Icon: FaHackerrank,
     },{
         title: 'Python Bot and Script',
         about: 'lorem Ipsum is Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum',
-        Icon: DiPython,
+        Icon: SiPython,
     }
 ]
 
 export const languages:ISkill[] = [
     {
         name:'Python',
-        level:'70%',
-        Icon: DiPython,
+        level:'65%',
+        Icon: SiPython,
     },
     {
         name:'JavaScript',
-        level:'70%',
+        level:'85%',
         Icon: DiJavascript1,
     },
     {
         name:'Dart',
-        level:'70%',
+        level:'75%',
         Icon: DiDart,
     },
     {
         name:'React',
-        level:'70%',
+        level:'85%',
         Icon: DiReact,
     },
     {
         name:'Flask',
-        level:'70%',
+        level:'55%',
         Icon: SiFlask,
     },
     {
         name:'Flutter',
-        level:'40%',
+        level:'75%',
         Icon: RiFlutterFill,
     },
 ]
 
 
 export const tools:ISkill[] = [
-    {
-        name:'Rive',
-        level:'70%',
-        Icon: MdAnimation,
-    },
+
     {
         name:'Blender',
-        level:'70%',
+        level:'40%',
         Icon: SiBlender,
     },
     {
@@ -98,13 +95,18 @@ export const tools:ISkill[] = [
     },
     {
         name:'Firebase',
-        level:'70%',
+        level:'80%',
         Icon: SiFirebase,
     },
     {
         name:'Telegram bot',
-        level:'70%',
+        level:'80%',
         Icon: SiTelegram,
+    },
+    {
+        name:'Rive',
+        level:'60%',
+        Icon: MdAnimation,
     },
 ]
 

@@ -6,6 +6,7 @@ import { MdClose } from "react-icons/md";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeUp, routeAnimation, stagger } from "../animations";
+import { GrAppleAppStore } from "react-icons/gr";
 
 const ProjectCard: FunctionComponent<{
   project: IProject;
@@ -19,6 +20,8 @@ const ProjectCard: FunctionComponent<{
     image_path,
     deployed_url,
     github_url,
+    appStore_url,
+    playStore_url,
     category,
     key_tech,
   },
@@ -53,7 +56,11 @@ const ProjectCard: FunctionComponent<{
             animate="animate"
             exit="exit"
           >
-            <motion.div variants={fadeUp} style={{ width: "90%"}} className='mx-auto'  >
+            <motion.div
+              variants={fadeUp}
+              style={{ width: "90%" }}
+              className="mx-auto"
+            >
               <Image
                 src={image_path}
                 alt={description}
@@ -92,18 +99,38 @@ const ProjectCard: FunctionComponent<{
               className="flex justify-around w-full my-5 "
               variants={fadeUp}
             >
-              <a
-                href={github_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg transition duration-500 transform bg-gray-200 rounded-lg md:scale-110 dark:bg-dark-500 hover:text-white-100 hover:bg-blue-700 hover:dark:bg-blue-700 hover:scale-110 md:hover:scale-125"
-              >
-                <AiFillGithub /> <span>Github</span>
-              </a>
-              <a
-                href={deployed_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg transition duration-500 transform bg-gray-200 rounded-lg md:scale-110 dark:bg-dark-500 hover:text-white-100 hover:bg-blue-700 hover:dark:bg-blue-700 hover:scale-110 md:hover:scale-125"
-              >
-                <AiFillProject /> <span>Project</span>
-              </a>
+              {github_url !== "" && (
+                <a
+                  href={github_url}
+                  className="flex items-center px-4 py-2 space-x-3 text-lg transition duration-500 transform bg-gray-200 rounded-lg md:scale-110 dark:bg-dark-500 hover:text-white-100 hover:bg-blue-700 hover:dark:bg-blue-700 hover:scale-110 md:hover:scale-125"
+                >
+                  <AiFillGithub /> <span>Github</span>
+                </a>
+              )}
+              {appStore_url !== "" && (
+                <a
+                  href={appStore_url}
+                  className="flex items-center px-4 py-2 space-x-3 text-lg transition duration-500 transform bg-gray-200 rounded-lg md:scale-110 dark:bg-dark-500 hover:text-white-100 hover:bg-blue-700 hover:dark:bg-blue-700 hover:scale-110 md:hover:scale-125"
+                >
+                  <GrAppleAppStore /> <span>Applestore</span>
+                </a>
+              )}
+              {playStore_url !== "" && (
+                <a
+                  href={playStore_url}
+                  className="flex items-center px-4 py-2 space-x-3 text-lg transition duration-500 transform bg-gray-200 rounded-lg md:scale-110 dark:bg-dark-500 hover:text-white-100 hover:bg-blue-700 hover:dark:bg-blue-700 hover:scale-110 md:hover:scale-125"
+                >
+                  <AiFillProject /> <span>Playstore</span>
+                </a>
+              )}
+              {deployed_url !== "" && (
+                <a
+                  href={deployed_url}
+                  className="flex items-center px-4 py-2 space-x-3 text-lg transition duration-500 transform bg-gray-200 rounded-lg md:scale-110 dark:bg-dark-500 hover:text-white-100 hover:bg-blue-700 hover:dark:bg-blue-700 hover:scale-110 md:hover:scale-125"
+                >
+                  <AiFillProject /> <span>Project</span>
+                </a>
+              )}
             </motion.div>
             <button
               onClick={() => {

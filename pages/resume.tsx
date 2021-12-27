@@ -39,7 +39,7 @@ function Resume() {
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">
-              Junior Programme
+              Junior Programmer
             </h5>
             <p className="font-semibold">Compat</p>
             <p className="my-3">

@@ -54,7 +54,7 @@ const About = ({ endpoint }) => {
           {services.map((service) => (
             <motion.div
               key={service.title}
-              className="col-span-2 p-2 bg-gray-200 rounded-lg shadow-custom-light dark:shadow-custom-dark dark:bg-dark-200 md:col-span-1"
+              className="flex col-span-2 p-2 bg-gray-200 rounded-lg shadow-custom-light dark:shadow-custom-dark dark:bg-dark-200 md:col-span-1 "
               variants={fadeUp}
             >
               <ServiceCard service={service} />

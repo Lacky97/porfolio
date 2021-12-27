@@ -4,11 +4,15 @@ import Navbar from "../components/Navbar";
 import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
 import { Router } from "next/router";
+import { useEffect } from "react";
+import detectZoom from 'detect-zoom';
 
-function MyApp({ Component, pageProps, router }) {
+
+
+function MyApp({ Component, pageProps, router }) {  
   return (
     <ThemeProvider attribute="class">
-      <div className="grid grid-cols-12 gap-6 px-5 my-14 sm:px-20 md:px-32">
+      <div className="grid grid-cols-12 gap-6 px-5 sm:h-auto sm:px-20 my-14 lg:my-0 md:px-32 lg:h-screen lg:justify-center lg:items-center ">
         <div className="col-span-12 p-4 space-y-4 text-center bg-white dark:bg-dark-500 lg:col-span-3 cols-span-3 rounded-2xl shadow-custom-light dark:shadow-custom-dark" >
           <Sidebar />
         </div>
@@ -24,3 +28,5 @@ function MyApp({ Component, pageProps, router }) {
 }
 
 export default MyApp;
+
+
