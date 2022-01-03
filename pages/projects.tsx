@@ -5,6 +5,8 @@ import { useState } from "react";
 import { Category } from "../type";
 import { motion } from "framer-motion";
 import { fadeUp, routeAnimation, stagger } from "../animations";
+import Head from "next/head";
+
 
 function Projects() {
   const [projectsState, setProjectsState] = useState(projectsSite);
@@ -33,6 +35,9 @@ function Projects() {
       animate="animate"
       exit="exit"
     >
+      <Head>
+        <title>luca&apos;s blog</title>
+      </Head>
       <motion.div
         variants={stagger}
         initial="initial"

@@ -14,6 +14,8 @@ import esportazione from '/public/images/export.png';
 import OSBot from '/public/images/oneshotBot.png';
 import fiumiBot from '/public/images/fiumiBot.png';
 import eterDog from '/public/images/eterDog.png';
+import eterDogApp from '/public/images/eternaldogs.png';
+import CoinFlip from '/public/images/CoinFlipCard.png';
 
 
 
@@ -25,7 +27,7 @@ export const services:IServices[] = [
     },
     {
         title: 'Backend Development',
-        about: 'Handle database, server, api using Express & other popular frameworks',
+        about: 'Handle database, server, api using Express & Flask',
         Icon: AiFillDatabase,
     },{
         title: 'Api Development',
@@ -42,7 +44,7 @@ export const services:IServices[] = [
         Icon: FaHackerrank,
     },{
         title: 'Python Bot and Script',
-        about: 'lorem Ipsum is Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum. Lorem Ipsum is a Lorem Ipsum',
+        about: 'I can develop Script in Python and Telegram Bot',
         Icon: SiPython,
     }
 ]
@@ -89,7 +91,7 @@ export const tools:ISkill[] = [
         Icon: SiBlender,
     },
     {
-        name:'Studio 3T',
+        name:'MongoDB Compass',
         level:'70%',
         Icon: DiMongodb,
     },
@@ -114,11 +116,11 @@ export const projectsSite:IProject[] = [
     {
         id:1,
         name:'Menus',
-        description:'Questa applicazione permette di memorizzare i menu dei ristoranti, scansionati tramite QR Code, per poi poterli consultare in qualsiasi momento si voglia',
+        description:'This app allow to store the restaurants menus, scanned through QR code , to consul them whenever you want',
         image_path: menus,
-        deployed_url: 'https://google.com/',
+        deployed_url: '',
         github_url: 'https://github.com/Lacky97/menus',
-        playStore_url:'',
+        playStore_url:'https://play.google.com/store/apps/details?id=com.lucabonasera.menus',
         appStore_url:'',
         category: ['flutter'],
         key_tech: ['Flutter', 'Dart', 'Hive']
@@ -126,10 +128,10 @@ export const projectsSite:IProject[] = [
     {
         id:2,
         name:'PogChampsIta',
-        description:'Questo sito permette di tenere traccia dei risultati delle partite di un torneo di schacchi tra streamer di twitch.',
+        description:'This site allow the user to follow the matches result of a chess championship between some streamer',
         image_path: pog,
         deployed_url: 'https://pogchampsita.web.app/',
-        github_url: 'https://google.com/',
+        github_url: '',
         playStore_url:'',
         appStore_url:'',
         category: ['react'],
@@ -138,10 +140,10 @@ export const projectsSite:IProject[] = [
     {
         id:3,
         name:'Livello Fiumi Liguria App',
-        description:'this app allow to see homy many codiv cas in a day, this app allow to see homy many codiv cas in a day, this app allow to see homy many codiv cas in a day, this app allow to see homy many codiv cas in a day, ',
+        description:'This App allow the user to follow the level of the most rivers in liguria, and you can save it for receive notification when the level of the water in the river exceed a certain value',
         image_path: liguria,
-        deployed_url: 'https://google.com/',
-        github_url: 'https://google.com/',
+        deployed_url: '',
+        github_url: 'https://github.com/Lacky97/LivelloFiumiAPP',
         playStore_url:'',
         appStore_url:'',
         category: ['flutter'],
@@ -150,10 +152,10 @@ export const projectsSite:IProject[] = [
     {
         id:4,
         name:'Livello Fiumi Liguria Bot',
-        description:'this app allow to see homy many codiv cas in a day',
+        description:'This is an API that take the data from the Omril site and serve the data to the application LivelliFiumiApp',
         image_path: fiumiBot,
-        deployed_url: 'https://google.com/',
-        github_url: 'https://google.com/',
+        deployed_url: '',
+        github_url: 'https://github.com/Lacky97/randomChoiseflask',
         playStore_url:'',
         appStore_url:'',
         category: ['python'],
@@ -162,10 +164,10 @@ export const projectsSite:IProject[] = [
     {
         id:5,
         name:'EternalDogs',
-        description:'this app allow to see homy many codiv cas in a day',
+        description:'This is a presentation site for a group of NFT called EternalDogs',
         image_path: eterDog,
-        deployed_url: 'https://google.com/',
-        github_url: 'https://google.com/',
+        deployed_url: 'https://eternaldogs-f84da.web.app/',
+        github_url: 'https://github.com/Lacky97/nftsite',
         playStore_url:'',
         appStore_url:'',
         category: ['react'],
@@ -173,11 +175,11 @@ export const projectsSite:IProject[] = [
     },
     {
         id:6,
-        name:'EternalDogs App',
-        description:'this app allow to see homy many codiv cas in a day',
-        image_path: menus,
-        deployed_url: 'https://google.com/',
-        github_url: 'https://google.com/',
+        name:'EternalDogsApp',
+        description:'This is an App that allow the user to see and save a random NFT from the group EternalDogs.',
+        image_path: eterDogApp,
+        deployed_url: '',
+        github_url: 'https://github.com/Lacky97/eternaldogs',
         playStore_url:'',
         appStore_url:'',
         category: ['flutter'],
@@ -185,11 +187,11 @@ export const projectsSite:IProject[] = [
     },
     {
         id:7,
-        name:'OneShot',
-        description:'this app allow to see homy many codiv cas in a day',
-        image_path: menus,
-        deployed_url: 'https://google.com/',
-        github_url: 'https://google.com/',
+        name:'CoinFilp',
+        description:'This is a little game application where you can throw a coin and you continue to throw until tails come out and at each thrown the probability to get cross increase',
+        image_path: CoinFlip,
+        deployed_url: '',
+        github_url: 'https://github.com/Lacky97/LivelloFiumiAPP',
         playStore_url:'',
         appStore_url:'',
         category: ['flutter'],
@@ -198,10 +200,10 @@ export const projectsSite:IProject[] = [
     {
         id:8,
         name:'RandomChoise (for OneShot)',
-        description:'this app allow to see homy many codiv cas in a day',
+        description:'This is a python program based on flask that provides some API to the application CoinFlip.',
         image_path: OSBot,
-        deployed_url: 'https://google.com/',
-        github_url: 'https://google.com/',
+        deployed_url: '',
+        github_url: 'https://github.com/Lacky97/randomChoiseflask',
         playStore_url:'',
         appStore_url:'',
         category: ['python'],
@@ -210,10 +212,10 @@ export const projectsSite:IProject[] = [
     {
         id:9,
         name:'speech project',
-        description:'this app allow to see homy many codiv cas in a day',
+        description:'This is an App that using the library "Speech Recognizer" for sintetiza a voice that will read all the notification that you have receive.',
         image_path: speech,
-        deployed_url: 'https://google.com/',
-        github_url: 'https://google.com/',
+        deployed_url: '',
+        github_url: '',
         playStore_url:'',
         appStore_url:'',
         category: ['python'],
@@ -222,10 +224,10 @@ export const projectsSite:IProject[] = [
     {
         id:10,
         name:'Esportazione Mosaico',
-        description:'this app allow to see homy many codiv cas in a day',
+        description:'This is a software write in python that extract the database from an older software called mosaico.',
         image_path: esportazione,
-        deployed_url: 'https://google.com/',
-        github_url: 'https://google.com/',
+        deployed_url: '',
+        github_url: 'https://github.com/Lacky97/Esportazione_mosaico',
         playStore_url:'',
         appStore_url:'',
         category: ['python'],

@@ -5,7 +5,6 @@ import ServiceCard from "../components/ServiceCard";
 import { fadeUp, stagger, routeAnimation, fadeUpH2 } from "../animations";
 import Head from "next/head";
 
-
 const About = ({ endpoint }) => {
   return (
     <motion.div
@@ -16,7 +15,7 @@ const About = ({ endpoint }) => {
       exit="exit"
     >
       <Head>
-        <title>Web Developer | portfolio | submit</title>
+        <title>luca&apos;s blog</title>
       </Head>
       <motion.h5
         className="my-1 font-medium"
@@ -24,10 +23,11 @@ const About = ({ endpoint }) => {
         initial="initial"
         animate="animate"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut lucabonasera2, Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        lucabonasera2
+        After obtaining a bachelor&apos;s degree in computer science and an
+        experience in a small company in my city, I&apos;m looking for a job in the
+        branch of web or app development. During my university years I developed
+        some personal projects using mainly python, javascript and dart as languages
+        programming.
       </motion.h5>
       <motion.div
         className="flex-grow px-4 pb-2 mt-4 mb-4 bg-gray-100 shadow-custom-light dark:shadow-custom-dark dark:bg-dark-100 rounded-xl "

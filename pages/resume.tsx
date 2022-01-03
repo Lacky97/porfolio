@@ -14,10 +14,10 @@ function Resume() {
       exit="exit"
     >
       <Head>
-        <title>Web Developer | portfolio | submit</title>
+        <title>luca&apos;s blog</title>
       </Head>
       {/* education and exp */}
-      <div className="grid gap-6 md:grid-cols-2" >
+      <div className="grid gap-6 md:grid-cols-2">
         <motion.div
           variants={fadeUp}
           initial="initial"
@@ -30,20 +30,17 @@ function Resume() {
               Bachelor of Computer Science
             </h5>
             <p className="font-semibold">Università degli Studi di Genova</p>
-            <p className="my-3">
-              Attualmente in cerca di un&apos;occupazione
-            </p>
+            <p className="my-3">Currently looking for a job</p>
           </div>
         </motion.div>
         <motion.div variants={fadeUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
-            <h5 className="my-2 text-xl font-bold">
-              Junior Programmer
-            </h5>
+            <h5 className="my-2 text-xl font-bold">Junior Programmer</h5>
             <p className="font-semibold">Compat</p>
             <p className="my-3">
-              Controllo e aggiornamento di Mosaico, un software gestionale per gli agricoltori
+              Control and update of Mosaico (a management software for
+              farmersControllo)
             </p>
           </div>
         </motion.div>

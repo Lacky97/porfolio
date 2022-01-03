@@ -65,7 +65,40 @@ const Sidebar = () => {
         >
           <FaLinkedinIn className="w-6 h-6 mt-1 align-middle cursor-pointer" />
         </motion.a>
-        <motion.a
+        
+      </div>
+      {/* address */}
+      <div className="py-4 my-5 bg-gray-200 rounded-lg dark:bg-dark-200">
+        <div className="flex items-center justify-center space-x-2">
+          <GoLocation />
+          <span> Albenga, Italy</span>
+        </div>
+        <p className="informationAddress">lucabonsaera2@gmail.com</p>
+        <p className="informationAddress">+39 3463225879</p>
+      </div>
+      {/* Email button */}
+      <div className="min-h-full">
+        <button
+          className="informationEmail focus:outline-none"
+          onClick={() => window.open("mailto:lucabonasera2@gmail.com")}
+        >
+          Email Me
+        </button>
+      </div>
+      <BsFillMoonFill
+        className="absolute right-5 top-5 "
+        size="25px"
+        onClick={() => changeTheme()}
+      />
+    </div>
+  );
+};
+
+export default Sidebar;
+
+
+/* INSTAGRAM ICON
+<motion.a
           href="https://www.instagram.com/lacky97/"
           aria-label="Instagram"
           whileHover={{
@@ -95,32 +128,4 @@ const Sidebar = () => {
             />
           </motion.div>
         </motion.a>
-      </div>
-      {/* address */}
-      <div className="py-4 my-5 bg-gray-200 rounded-lg dark:bg-dark-200">
-        <div className="flex items-center justify-center space-x-2">
-          <GoLocation />
-          <span> Albenga, Italy</span>
-        </div>
-        <p className="informationAddress">lucabonsaera2@gmail.com</p>
-        <p className="informationAddress">3463225879</p>
-      </div>
-      {/* Email button */}
-      <div className="min-h-full">
-        <button
-          className="informationEmail focus:outline-none"
-          onClick={() => window.open("mailto:lucabonasera2@gmail.com")}
-        >
-          Email Me
-        </button>
-      </div>
-      <BsFillMoonFill
-        className="absolute right-5 top-5 "
-        size="25px"
-        onClick={() => changeTheme()}
-      />
-    </div>
-  );
-};
-
-export default Sidebar;
+*/
