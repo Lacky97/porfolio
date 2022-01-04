@@ -15,7 +15,7 @@ const About = ({ endpoint }) => {
       exit="exit"
     >
       <Head>
-        <title>luca&apos;s blog</title>
+        <title>luca&apos;s porfolio</title>
       </Head>
       <motion.h5
         className="my-1 font-medium"
