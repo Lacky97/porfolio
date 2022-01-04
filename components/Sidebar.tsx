@@ -34,7 +34,7 @@ const Sidebar = () => {
       </p>
       <a
         className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200"
-        href="/CV.pdf"
+        href="/CV_Bonasera_Luca.pdf"
         download='CV_Bonasera_Luca.pdf'
       >
         <GiTie className="w-6 h-6" />
